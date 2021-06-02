@@ -14,9 +14,8 @@ namespace Async_Await_POC
         public static async void callMethod()
         {
             Task<int> task = Method1();
-            int count = await task;
-
             Method2();
+            int count = await task;
             Method3(count);
         }
 
